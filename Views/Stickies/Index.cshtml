@@ -28,7 +28,15 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model) 
+{
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@item.Notetitle</h5>
+                <h6 class="card-subtitle mb-2 text-muted">@item.NoteDate</h6>
+                <p class="card-text">@item.Notetext</p>
+            </div>
+        </div>
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Notetitle)
