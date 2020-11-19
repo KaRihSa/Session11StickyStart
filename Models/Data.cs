@@ -2,6 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using stickynotes.Models;
+using Stickynotes.Models;
 
 namespace stickynotes.Data {
     public class StickyContext : DbContext
@@ -10,6 +11,7 @@ namespace stickynotes.Data {
             : base(options)
         {
         }
+        public DbSet<Stickynotes.Models.Sticky> Sticky { get; set; }
 
         // create a model, then insert a dbset here that matches it.
         // public DbSet<Movie> Movie { get; set; }

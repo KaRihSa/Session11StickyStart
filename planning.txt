@@ -12,15 +12,20 @@
 
 * do scaffolding.
     * Scaffolding:
-    - dotnet aspnet-codegenerator controller -name StickiesController -m Sticky -dc MvcMovieContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
-
+    - dotnet aspnet-codegenerator controller -name StickiesController -m Sticky -dc StickyContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
 
 * make the table in the db - 'migrate'
-
-dotnet ef migrations add InitialCreate
-dotnet ef database update
+    dotnet ef migrations add InitialCreate
+    dotnet ef database update
 
 * run it! make sure you can create stickies!
+    - CHECK IS SUCCESSFUL? YAS
 
 * start making it look/work like you actually want it to.
 HTML/CSS/Javascript
+    -  Add StickyTab in navbar
+    - Display stickynotes as stickynotes
+    - Automatically set "Order" and post Date
+    - Add a create function in JS to post notes to the same screen and db
+    - Ability to order/reorder
+
